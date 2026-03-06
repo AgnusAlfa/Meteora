@@ -56,3 +56,21 @@ body { background-color: #050505; font-family: 'Inter', sans-serif; color: white
     border-radius: 8px;
     width: 100%;
 }
+
+/* Estilo para que la lupa y el input parezcan un solo bloque */
+.custom-search .input-group-text, 
+.custom-search .form-control {
+    border-color: #0dcaf0 !important; /* El color 'info' de Bootstrap */
+    color: #ffffff;
+}
+
+/* Evita que el borde cambie de color al hacer clic */
+.custom-search .form-control:focus {
+    border-color: #0dcaf0 !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Cambia el color del placeholder para que sea legible */
+.custom-search input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}

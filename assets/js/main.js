@@ -41,3 +41,21 @@ const mostrarProductos = (listaProductos) => {
 document.addEventListener('DOMContentLoaded', () => {
     mostrarProductos(productos);
 });
+
+
+const buscador = document.getElementById('buscador');
+
+buscador.addEventListener('keyup', (e) => {
+    const texto = e.target.value.toLowerCase();
+    
+    // Filtramos el array original de data.js
+    const productosFiltrados = productos.filter(prod => {
+        return prod.nombre.toLowerCase().includes(texto) || 
+               prod.origen.toLowerCase().includes(texto);
+    });
+
+    // Limpiamos el contenedor y volvemos a renderizar solo los filtrados
+    const contenedor = document.getElementById('productos-container');
+    contenedor.innerHTML = "";
+    mostrarProductos(productosFiltrados);
+});
