@@ -1,0 +1,23 @@
+:root {
+    --cosmic-bg: #0b0b14;
+    --neon-purple: #8a2be2;
+    --neon-blue: #00d4ff;
+    --glass-effect: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--cosmic-bg);
+    font-family: 'Inter', sans-serif;
+    color: #f8f9fa;
+}
+
+h1, h2, .navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
