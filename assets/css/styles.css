@@ -1,23 +1,58 @@
-:root {
-    --cosmic-bg: #0b0b14;
-    --neon-purple: #8a2be2;
-    --neon-blue: #00d4ff;
-    --glass-effect: rgba(255, 255, 255, 0.1);
-}
+body { background-color: #050505; font-family: 'Inter', sans-serif; color: white; }
 
-body {
-    background-color: var(--cosmic-bg);
-    font-family: 'Inter', sans-serif;
-    color: #f8f9fa;
-}
-
-h1, h2, .navbar-brand {
+/* Navbar y Logo */
+.navbar-meteora { padding: 20px 0; border-bottom: 1px solid #222; }
+.logo {
     font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
-}
-
-.text-gradient {
-    background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+    font-weight: 700;
+    background: linear-gradient(90deg, #00d4ff, #8a2be2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Buscador proporcionado */
+.search-bar { width: 40%; }
+.search-bar input {
+    width: 100%;
+    background: #111;
+    border: 1px solid #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* CARDS: 4 por línea, fotos pequeñas */
+.card-meteor {
+    background: #111 !important;
+    border: 1px solid #222 !important;
+    border-radius: 15px !important;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+.img-container {
+    height: 100px; /* Foto pequeña como pediste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.img-container img {
+    max-height: 100%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.card-title { font-size: 0.8rem; margin: 0; font-weight: 600; }
+.card-price { color: #00d4ff; font-weight: 700; font-size: 0.9rem; margin: 5px 0; }
+.btn-add {
+    background: linear-gradient(45deg, #00d4ff, #8a2be2);
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    padding: 5px;
+    border-radius: 8px;
+    width: 100%;
 }

@@ -3,33 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meteora | Reliquias Celestiales</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>METEORA | Luxury Cosmic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 <body class="bg-dark text-light">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-secondary sticky-top"
-            style="background-color: var(--cosmic-bg);">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
             <div class="container">
-                <a class="navbar-brand fw-bold text-gradient fs-3" href="index.html">METEORA</a>
-    
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navRes">
+                <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px;">METEORA</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
-                <div class="collapse navbar-collapse" id="navRes">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Catálogo</a>
-                        </li>
-                        <li class="nav-item ms-lg-4">
-                            <a class="nav-link btn btn-outline-info position-relative px-3 mt-3 mt-lg-0" href="cart.html">
-                                <span>🛒 Carrito</span>
-                                <span id="cart-count"
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            <a class="nav-link btn btn-outline-info position-relative ms-lg-3" href="carrito.html">
+                                🛒 Carrito
+                                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     0
                                 </span>
                             </a>
@@ -40,23 +37,29 @@
         </nav>
     </header>
 
-    <main class="container my-5">
-        <section id="hero" class="text-center py-5">
-            <h1 class="display-4 fw-bold text-gradient">Meteora</h1>
-            <p class="lead">Fragmentos genuinos del cosmos en tus manos.</p>
-        </section>
+    <section class="hero-section text-center py-5" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&w=1350&q=80'); background-size: cover;">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold text-info" style="font-family: 'Orbitron', sans-serif;">METEORA</h1>
+            <p class="lead">Fragmentos exclusivos del cosmos en la palma de tu mano.</p>
+        </div>
+    </section>
 
-        <section id="product-grid" class="row g-4">
-            </section>
+    <main class="container my-5">
+        <h2 class="text-center mb-5" style="font-family: 'Orbitron', sans-serif;">Colección Estelar</h2>
+        
+        <div id="productos-container" class="row g-4">
+            </div>
     </main>
 
-    <footer class="py-4 text-center border-top border-secondary mt-5">
-        <p>&copy; 2026 Meteora - Luxury Meteorites. Todos los derechos reservados.</p>
+    <footer class="bg-black py-4 border-top border-secondary text-center">
+        <div class="container">
+            <p class="mb-0 text-secondary small">&copy; 2024 METEORA - Luxury Meteorite Boutique. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.npmmirror.com/package/bootstrap/5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script src="assets/js/product.js"></script>
+    <script src="assets/js/data.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
