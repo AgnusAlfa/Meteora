@@ -6,7 +6,7 @@ MVP de una tienda virtual de fragmentos de meteoritos reales, desarrollada como 
 - **Catálogo Dinámico:** Renderizado de 12 productos desde objetos JavaScript.
 - **Diseño Responsivo:** Implementado con Bootstrap 5 (3 columnas en Desktop, 2 en Tablet, 1 en Móvil).
 - **Sistema de Carrito:** Funcionalidad completa de agregar, eliminar y vaciar con persistencia en `localStorage`.
-- **Precios en USD:** Formateo automático de moneda estadounidense.
+- **Precios en pesos:** Formateo automático de moneda chilena.
 - **Estética "Lujo Cósmico":** Interfaz oscura con acentos neón y tipografía futurista.
 
 # Tecnologías usadas
